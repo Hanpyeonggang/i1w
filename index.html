@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>강아지 소변량 계산기</title>
+
+<style>
+  @font-face {
+    font-family: 'HansuwonHanullim';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'HansuwonHanullim'; 
+    margin: auto; 
+    width: 1000px; 
+    font-size: 30px;             
+    text-align: center;             
+    padding-top: 100px;  
+    color: #003af7;           
+  }
+  .dd{width: 200px; margin-bottom: 50px; margin-top: 100px;}
+</style>
+
+</head>
+<body> 
+  <script>
+  a = prompt("자신의 강아지 몸무게(kg)를 입력하세요.");
+  sum(a);
+  
+  function sum(num){
+    let small = num * 20;
+    let big= num * 40
+    document.body.innerHTML = "<img src='somsom.jpg'class='dd'>"+"<br>"+"몸무게 " + num +"kg" +" 강아지의 하루 평균 적정 소변량은 "+small+ " ~ " +big +"ml" +"입니다."+"<br>"+"<br>"+"솜솜이와 강아지들이 항상 건강하길^^";
+  }
+  
+</script>
+
+</body>
+</html>
